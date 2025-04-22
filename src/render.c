@@ -6,7 +6,7 @@
 /*   By: kanahash <kanahash@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/17 19:45:48 by kanahash          #+#    #+#             */
-/*   Updated: 2025/04/19 11:10:51 by kanahash         ###   ########.fr       */
+/*   Updated: 2025/04/22 21:13:06 by kanahash         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ static void	img_pix_coordinate(t_img *img, int x, int y, int color)
 {
 	char	*pixel;
 
-	pixel = img->addr + (y * img->line_size + x * (img->bpp / 8));
+	pixel = img->addr + ((HEIGHT - y) * img->line_size + x * (img->bpp / 8));
 	*(int *)pixel = color;
 }
 

@@ -6,7 +6,7 @@
 /*   By: kanahash <kanahash@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/14 04:05:24 by kanahash          #+#    #+#             */
-/*   Updated: 2025/04/19 11:08:55 by kanahash         ###   ########.fr       */
+/*   Updated: 2025/04/22 20:11:23 by kanahash         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,7 +57,7 @@ int			ft_strncmp(const char *s1, const char *s2, size_t n);
 
 // src
 // ft_atof.c
-double		ft_atof(char *str);
+double		ft_atof(const char *str);
 
 // init.c
 int			init_data(t_fractol *f);
